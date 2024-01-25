@@ -1,0 +1,21 @@
+# IntelliJ IDEA Files
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+# Java Related Files
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# Windows Specific Files
+Thumbs.db
+.DS_Store
