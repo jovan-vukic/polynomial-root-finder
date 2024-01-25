@@ -1,10 +1,15 @@
+package math.analysis;
+
+import math.util.Fraction;
+import math.util.Polynomial;
+
 public class MTP {
     private static final Fraction[] coefficients = {
-//            new Fraction(1),
-//            new Fraction(-1),
-//            new Fraction(1),
-//            new Fraction(-3, 2),
-//            new Fraction(3, 32)
+//            new math.util.Fraction(1),
+//            new math.util.Fraction(-1),
+//            new math.util.Fraction(1),
+//            new math.util.Fraction(-3, 2),
+//            new math.util.Fraction(3, 32)
             new Fraction(1, 4),
             new Fraction(-1, 6),
             new Fraction(1, 2),

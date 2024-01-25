@@ -1,3 +1,5 @@
+package math.analysis;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
@@ -57,7 +59,7 @@ public class RationalApproximation {
          *
          * @param q     The value of the denominator.
          * @param alpha The target fraction to approximate.
-         * @return A {@code Fraction} object representing the rational approximation of 'alpha'.
+         * @return A {@code math.util.Fraction} object representing the rational approximation of 'alpha'.
          */
         private static Fraction findRationalApproximation(int q, BigDecimal alpha) {
             if (q <= 0 || alpha.compareTo(BigDecimal.ZERO) <= 0) {

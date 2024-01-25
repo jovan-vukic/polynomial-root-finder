@@ -1,3 +1,8 @@
+package math.analysis;
+
+import math.util.Fraction;
+import math.util.Polynomial;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Arrays;

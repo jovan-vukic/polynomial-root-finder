@@ -1,3 +1,8 @@
+package math.analysis;
+
+import math.util.Fraction;
+import math.util.Polynomial;
+
 import java.util.*;
 
 public class PolynomialRootFinder {
