@@ -99,8 +99,8 @@ The sign of $P(x)$ is determined on the segment $\[ a, b \]$.
 
 ### Mixed Trigonometric Polynomial Functions
 
-The third part of the project involves considering MTP (Mixed Trigonometric Polynomial) Functions:
-$$f(x) = \sum_{i=1}^{n} \alpha_i x^{p_i} \cos^{q_i}(x) \sin^{r_i}(x)$$
+The third part of the project involves considering only simple MTP (Mixed Trigonometric Polynomial) functions:
+$$f(x) = \sum_{i=1}^{n} \alpha_i x^{p_i} \cos^{q_i}(x) + \sum_{j=1}^{m} \beta_j x^{p_j} \sin^{r_j}(x)$$
 in the context of determining the positivity of such functions on the standard interval $(0, \frac{\pi}{2})$.
 This is done by expanding terms containing $\sin(x)$ and $\cos(x)$ with Maclaurin series up to a certain degree.
 Thus, an approximate polynomial $P(x) < f(x)$ for the function $f(x)$ is obtained.
@@ -222,16 +222,16 @@ Process finished with exit code 0
 
 By selecting a suitable Maclaurin series for $\sin \( x \)$ and $\cos \( x \)$, the approximate polynomial $P \( x \)$
 to the function:
-$$f(x) = \frac{1}{4} \cdot x^3\sin^2\(x\) - \frac{1}{6}\cdot x\cos\(x\)\sin^2\(x\) + \frac{1}{2}\cdot x^3 - \frac{1}{15}\cdot x^4 - \frac{3}{25} \cdot x^6$$
+$$f(x) = \frac{1}{4} \cdot x^3\sin^2\(x\) + x\cos\(x\) + \frac{1}{2}\cdot x^3\sin\(x\) - \frac{1}{15}\cdot x^4 - \frac{3}{25} \cdot x^6$$
 is created. Positivity of the suitable polynomial $P \( x \)$ is examined to prove the positivity of the function $f \( x \)$.
 
 ```shell-session
-f(x) = 1/4*x^3*sin^2(x) - 1/6*x*cos(x)*sin^2(x) + 1/2*x^3 - 1/15*x^4 - 3/25*x^6
+f(x) = 1/4*x^3*sin^2(x) + x*cos(x) + 1/2*x^3*sin(x) - 1/15*x^4 - 3/25*x^6
 
-P[k1=0, k2=0](x) = 1/144*x^9 - 1/12*x^7 - 3/25*x^6 + 1/4*x^5 - 1/15*x^4 + 1/3*x^3
+P[k1=0, k2=0](x) = 1/144*x^9 - 1/12*x^7 - 61/300*x^6 + 1/4*x^5 + 13/30*x^4 - 1/2*x^3 + x
 The given polynomial changes sign in the interval (0.0, 1.58).
 
-P[k1=0, k2=1](x) = 1/144*x^9 - 13/144*x^7 - 3/25*x^6 + 1/3*x^5 - 1/15*x^4 + 1/3*x^3
+P[k1=0, k2=1](x) = 1/144*x^9 - 61/720*x^7 - 61/300*x^6 + 7/24*x^5 + 13/30*x^4 - 1/2*x^3 + x
 The given polynomial is positive in the interval (0.0, 1.58).
 P[k1=0, k2=1](x) is the sought polynomial to prove the positivity of the MTP function f(x).
 

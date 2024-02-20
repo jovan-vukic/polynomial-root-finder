@@ -11,7 +11,7 @@ public class MTP {
 //            new math.util.Fraction(-3, 2),
 //            new math.util.Fraction(3, 32)
             new Fraction(1, 4),
-            new Fraction(-1, 6),
+            new Fraction(1),
             new Fraction(1, 2),
             new Fraction(-1, 15),
             new Fraction(-3, 25)
@@ -26,7 +26,7 @@ public class MTP {
 //            {1, 0, 0, 0, 0},
             {3, 1, 3, 4, 6},
             {0, 1, 0, 0, 0},
-            {2, 2, 0, 0, 0},
+            {2, 0, 1, 0, 0},
     };
 
     public static void main(String[] args) {
